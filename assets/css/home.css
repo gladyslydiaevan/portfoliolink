@@ -1,0 +1,472 @@
+.navbar {
+    background-color: #DDDDDD !important;
+    z-index: 2;
+}
+
+.navbar.scrolled {
+    opacity: .7;
+    /* background-color: transparent !important; */
+}
+
+#image-modal {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+#image-modal.active {
+    display: flex;
+}
+
+.image-modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-modal-container img {
+    height: 80vh;
+}
+
+.close-image-container {
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 40px;
+    outline: none;
+    border: none;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    background-color: #DDDDDD;
+}
+
+#column-sidebar {
+    padding-top: 30px;
+    padding-left: 40px;
+    min-height: 100vh;
+    max-height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#column-gallery {
+    min-height: 100vh;
+    background-color: #e4e3e3;
+}
+
+.copyright {
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+    font-family: Poppins;
+    /* background-color: #eee; */
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    /* padding: 18px; */
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.accordion.active-link {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
+.panel-link.active-link {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
+a.accordion:hover {
+    color: #444;
+    text-decoration: none;
+}
+
+.accordion.projects {
+    margin-top: 30px;
+}
+
+.accordion.projects::after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion.projects.active::after {
+    content: '\2212';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.panel {
+    /* padding: 0 18px; */
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    padding-left: 40px;
+    width: 100%;
+    transition: 1s;
+}
+
+.panel-link {
+    display: block;
+    color: #444;
+    margin: 15px 0;
+}
+
+.panel-link:hover {
+    color: #444;
+    text-decoration: none;
+}
+
+.panel.active {
+    display: block;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container img {
+    width: 60%;
+    border-radius: 20px;
+}
+
+.about-container .about-desc {
+    font-family: Poppins;
+    width: 60%;
+    font-size: 22px;
+    opacity: .9;
+}
+
+.welcome-text {
+    font-family: Inter;
+    width: 60%;
+    font-weight: lighter;
+    font-size: 50px;
+    font-size: 50px;
+}
+
+form>* {
+    max-width: 80%;
+}
+
+.form-group label {
+    font-family: Poppins;
+}
+
+.form-group .form-control {
+    border-radius: 0;
+    border: 0;
+    outline: 0;
+}
+
+.form-group textarea.form-control {
+    height: 150px;
+}
+
+.form-group .form-control:focus {
+    box-shadow: none;
+}
+
+.btn-send {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 0;
+}
+
+.social-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.social-group .social-item {
+    background-color: grey;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+}
+
+.social-group .social-item:hover {
+    background-color: #000;
+}
+
+.grid-container {
+    width: 100%;
+    /* margin: 10px auto; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* background-color: #fff; */
+    padding-top: 10px;
+}
+
+.grid-container>.grid {
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 0px;
+    column-gap: 0px;
+    -webkit-column-fill: balance;
+    column-fill: balance;
+    position: relative;
+}
+
+.grid-container>.grid>* {
+    display: inline-block;
+    font-family: arial, helvetica, sans;
+    font-size: 12px;
+    color: #333;
+    /* background-color: #f0f0f0; */
+    /* padding: 10px; */
+    /* margin-bottom: 10px;
+    margin-right: 10px; */
+}
+
+.grid-container img {
+    transition: transform .5s ease;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.grid-container {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.grid-container .grid-img-container {
+    border-radius: 5px;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    /* box-sizing: border-box; */
+    position: relative;
+    z-index: 1;
+}
+
+.grid-container .grid-img-container .grid-tag {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    display: none;
+    padding: 20px 10px;
+    color: #fff;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.grid-container .grid-img-container .grid-tag::before {
+    content: url(../img/global/location.svg);
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.grid-container .grid-img-container:hover img {
+    transform: scale(1.2);
+    max-width: 100%;
+}
+
+.grid-container .grid-img-container:hover .grid-tag {
+    display: flex;
+}
+
+.grid-container>.grid>*>img {
+    width: 100%;
+    margin: 5px 10px;
+}
+
+
+/* 
+.grid-container>.grid>*>*:first-child {
+    margin-top: 0;
+}
+
+.grid-container>.grid>*>*:last-child {
+    margin-bottom: 0;
+} */
+
+
+/*# sourceMappingURL=home.css.map */
+
+@media screen and (max-width: 768px) {
+    .grid-container>.grid {
+        -webkit-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 0px;
+        column-gap: 0px;
+        -webkit-column-fill: balance;
+        column-fill: balance;
+        position: relative;
+    }
+}
+
+
+/*  */
+
+
+/* The Overlay (background) */
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    /* Stay in place */
+    z-index: 3;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+    /* position: relative;
+    top: 25%; */
+    /* 25% from the top */
+    /* width: 100%; */
+    /* 100% width */
+    /* text-align: center; */
+    /* Centered text/links */
+    /* margin-top: 30px; */
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-links {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.overlay-links .accordion {
+    color: #fff;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    section {
+        padding-top: 100px;
+    }
+    .about-container img {
+        width: 90%;
+        margin-top: -120px;
+        margin-bottom: 30px;
+    }
+    .about-container .about-desc {
+        width: 90%;
+        font-size: 20px;
+    }
+    .about-container .welcome-text {
+        width: 90%;
+    }
+}
