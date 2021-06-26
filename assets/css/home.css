@@ -1,3 +1,7 @@
+#myNav {
+    width: 0%;
+}
+
 .navbar {
     background-color: #DDDDDD !important;
     z-index: 2;
