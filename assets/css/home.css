@@ -302,7 +302,7 @@ form>* {
 }
 
 .grid-container .grid-img-container .grid-tag::before {
-    content: url(./img/global/location.svg);
+    content: url(/portfolio-trial/assets/img/global/location.svg);
     width: 20px;
     height: 20px;
     margin-right: 5px;
