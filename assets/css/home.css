@@ -471,6 +471,6 @@ form>* {
     }
     .image-modal-container img {
         max-width: 100vw;
-        max-height: 100vh;
+        height: auto;
     }
 }
