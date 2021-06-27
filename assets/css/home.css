@@ -477,7 +477,7 @@ form>* {
         margin-top: -50px !important;
     }
     .grid-container .grid-img-container .grid-tag::before {
-        content: url(/portfolio-trial/assets/img/global/plus-icon.svg);
+        content: url(/portfolio-trial/assets/img/global/plus-icon-small.svg);
         width: 15px;
         height: 15px;
     }
