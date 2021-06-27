@@ -1,6 +1,11 @@
 .navbar {
-    background-color: #DDDDDD !important;
+    background-color: #ddd !important;
     z-index: 2;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+    padding: 7px 14px;
 }
 
 .navbar.scrolled {
@@ -349,6 +354,12 @@ a.accordion:hover {
         -webkit-column-fill: balance;
         column-fill: balance;
         position: relative;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        display: none;
     }
 }
 
