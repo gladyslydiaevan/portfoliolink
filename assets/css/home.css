@@ -305,7 +305,7 @@ a.accordion:hover {
 }
 
 .grid-container .grid-img-container .grid-tag::before {
-    content: url(/portfolio-trial/assets/img/global/plus-icon.svg);
+    content: url(/portfoliolink/assets/img/global/plus-icon.svg);
     width: 35px;
     height: 35px;
 }
@@ -480,7 +480,7 @@ a.accordion:hover {
         margin-top: -50px !important;
     }
     .grid-container .grid-img-container .grid-tag::before {
-        content: url(/portfolio-trial/assets/img/global/plus-icon-small.svg);
+        content: url(/portfoliolink/assets/img/global/plus-icon-small.svg);
         width: 15px;
         height: 15px;
     }
