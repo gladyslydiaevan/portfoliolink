@@ -308,7 +308,6 @@ form>* {
     content: url(/portfolio-trial/assets/img/global/plus-icon.svg);
     width: 35px;
     height: 35px;
-    margin-right: 5px;
 }
 
 .grid-container .grid-img-container:hover img {
@@ -476,5 +475,10 @@ form>* {
         max-width: 80vw;
         height: auto;
         margin-top: -50px !important;
+    }
+    .grid-container .grid-img-container .grid-tag::before {
+        content: url(/portfolio-trial/assets/img/global/plus-icon.svg);
+        width: 15px;
+        height: 15px;
     }
 }
