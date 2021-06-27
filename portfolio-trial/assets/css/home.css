@@ -180,8 +180,8 @@ a.accordion:hover {
     font-size: 50px;
 }
 
-form>* {
-    max-width: 80%;
+.form-group {
+    width: 130%;
 }
 
 .form-group label {
@@ -203,7 +203,7 @@ form>* {
 }
 
 .btn-send {
-    width: 100%;
+    width: 130%;
     background-color: #000;
     color: #fff;
     outline: none;
@@ -480,5 +480,8 @@ form>* {
         content: url(/portfolio-trial/assets/img/global/plus-icon-small.svg);
         width: 15px;
         height: 15px;
+    }
+    form>* {
+        max-width: 95%;
     }
 }
