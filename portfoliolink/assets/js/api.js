@@ -1,16 +1,16 @@
-// const endpoint = 'http://127.0.0.1:8000';
-const endpoint = "https://portfolio.sinarabadikeramik.com";
+// const api_endpoint = 'http://127.0.0.1:8000';
+const api_endpoint = "https://portfolio.sinarabadikeramik.com";
 
 const getData = (type) => {
   return axios
-    .get(`${endpoint}/api/images?user_id=1&type=${type}`)
+    .get(`${api_endpoint}/api/images?user_id=1&type=${type}`)
     .then((res) => res.data)
     .catch((err) => console.log(err));
 };
 
 const loadData = async (type) => {
   let res = await getData(type);
-  const endpoint = `${endpoint}/storage/`;
+  const endpoint = `${api_endpoint}/storage/`;
   if (res.response == "ok") {
     let content;
     res.data.forEach(function (data) {
