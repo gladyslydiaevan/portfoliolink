@@ -12,7 +12,7 @@ const loadData = async (type) => {
   let res = await getData(type);
   const endpoint = `${api_endpoint}/storage/`;
   if (res.response == "ok") {
-    let content;
+    let content = ``;
     res.data.forEach(function (data) {
       content += `<div class="grid-img-container">
                           <img src="${endpoint + data.featured}" alt="">
