@@ -135,7 +135,7 @@
             <div class="offset-md-4 offset-lg-3 col-lg-9 col-md-8" id="column-gallery">
                 <div class="grid-container">
                     <div class="grid">
-                        <div class="grid-img-container">
+                        <!-- <div class="grid-img-container">
                             <img src="/portfoliolink/assets/img/moments/3@2x.png" alt="">
                             <div class="grid-tag">
                             </div>
@@ -205,7 +205,7 @@
                             <img src="/portfoliolink/assets/img/moments/13@2x.png" alt="">
                             <div class="grid-tag">
                             </div>
-                        </div>
+                        </div> -->
 
 
                     </div>
@@ -222,8 +222,15 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.js" integrity="sha512-un2apco0rYUiZXxbURvZ7oBq4u0cGrXaIbC4C1k5nAio6WRMyYvj8xKua3NqALOuu0F83zDha7nKoFCZzx26rg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/portfoliolink/assets/js/api.js"></script>
     <script src="/portfoliolink/assets/js/toast.js"></script>
     <script src="/portfoliolink/assets/js/global.js"></script>
+    <script>
+        $(document).ready(function() {
+            loadData(1);
+        })
+    </script>
 </body>
 
 </html>
