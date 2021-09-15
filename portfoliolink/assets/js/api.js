@@ -14,13 +14,13 @@ const loadData = async (type) => {
   if (res.response == "ok") {
     let content = ``;
     res.data.forEach(function (data) {
-      content += `<div class="grid-img-container">
+      content += `<div class="grid-img-container" onclick="zoom(this)">
                           <img src="${endpoint + data.featured}" alt="">
                           <div class="grid-tag">
                           </div>
                       </div>`;
     });
-    console.log(content);
     $(".grid-container .grid").html(content);
+    $("#loading-screen").addClass('d-none');
   }
 };

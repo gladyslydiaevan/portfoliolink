@@ -456,6 +456,24 @@ a.accordion:hover {
 }
 
 
+/* Loading Screen */
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+}
+
+
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 
 @media screen and (max-height: 450px) {

@@ -1,0 +1,42 @@
+.grid-container {
+  width: 90%;
+  margin: 10px auto;
+  background-color: #666;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.grid-container > .grid {
+  -webkit-column-count: 5;
+          column-count: 5;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
+  -webkit-column-fill: balance;
+          column-fill: balance;
+  position: relative;
+}
+
+.grid-container > .grid > * {
+  display: inline-block;
+  font-family: arial, helvetica, sans;
+  font-size: 12px;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.grid-container > .grid > * > img {
+  width: 100%;
+  margin: 5px 0px;
+}
+
+.grid-container > .grid > * > *:first-child {
+  margin-top: 0;
+}
+
+.grid-container > .grid > * > *:last-child {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=home.css.map */
