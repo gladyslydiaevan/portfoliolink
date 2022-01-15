@@ -90,3 +90,7 @@ $(".accordion.projects").click(function () {
     toast.setText("URL has been copied to your clipboard!").show();
   }
   
+  let date = new Date()
+  let year = date.getFullYear()
+
+  $('span.year').html(year)
