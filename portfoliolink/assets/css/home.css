@@ -54,6 +54,16 @@ html,
 body {
     overflow-x: hidden;
     background-color: #DDDDDD;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
 }
 
 #linktree .row,
