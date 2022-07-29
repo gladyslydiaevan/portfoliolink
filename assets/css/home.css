@@ -580,7 +580,7 @@ a.accordion:hover {
         padding-top: 100px;
     }
     .about-container img {
-        width: 70%;
+        /* width: 70%; */
         margin-top: -120px;
         margin-bottom: 30px;
     }
