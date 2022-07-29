@@ -56,6 +56,79 @@ body {
     background-color: #DDDDDD;
 }
 
+#linktree .row,
+#linktree .col-10 {
+    height: 100vh;
+}
+
+#linktree .profile-image {
+    width: 200px;
+    -webkit-filter: grayscale(40%);
+    -moz-filter: grayscale(40%);
+    -ms-filter: grayscale(40%);
+    -o-filter: grayscale(40%);
+    filter: grayscale(40%);
+    transition: all .3s;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#linktree .profile-image:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+#linktree .linktree-title mark {
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    line-height: 0em;
+    padding-bottom: 0.5em;
+    background-color: white;
+}
+
+#linktree .linktree-item {
+    margin-top: -20px;
+    background-color: rgba(255, 255, 255, .5);
+    color: #000;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px 0;
+    transition: all .3s;
+}
+
+#linktree .linktree-item:hover {
+    background-color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    transform: translateY(10px);
+}
+
+#linktree .linktree-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: translateY(0px); */
+    transition: all .1s;
+    position: relative;
+    bottom: -40px;
+}
+
+#linktree .linktree-arrow.non-active {
+    /* display: none; */
+    position: fixed;
+    bottom: -100px;
+    /* transform: translateY(70px); */
+}
+
 #column-sidebar {
     padding-top: 30px;
     padding-left: 40px;
@@ -65,6 +138,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+#column-sidebar .logo-image {
+    margin-bottom: 20px;
 }
 
 #column-gallery {
@@ -166,7 +243,8 @@ a.accordion:hover {
 }
 
 .about-container img {
-    width: 60%;
+    /* width: 60%; */
+    height: 50vh;
     border-radius: 20px;
 }
 

@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="/portfoliolink/assets/css/home.css">
 
-    <title>About Me</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -36,6 +36,12 @@
 
         </div>
 
+        <div id="loading-screen">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
         <div class="row d-flex d-md-none">
             <div class="col">
                 <!-- The overlay -->
@@ -48,10 +54,10 @@
                     <div class="overlay-content">
                         <div class="overlay-links">
 
-                            <a href="/portfoliolink/gallery.html" class="accordion ml-2">Gallery</a>
+                            <a href="/portfoliolink/gallery.html" class="accordion active-link ml-2">Gallery</a>
                             <a href="/portfoliolink/food.html" class="accordion ml-2">Food & Products</a>
                             <a href="/portfoliolink/moment.html" class="accordion ml-2">Moments</a>
-                            <a href="/portfoliolink/about.html" class="accordion ml-2 active-link">About</a>
+                            <a href="/portfoliolink/about.html" class="accordion ml-2">About</a>
 
                             <a href="/portfoliolink/contact.html" class="accordion ml-2">Contact</a>
                         </div>
@@ -96,11 +102,11 @@
                         <img src="/portfoliolink/assets/img/global/logo-huge.svg" class="logo-image" alt="">
                     </a>
 
-
                     <a href="/portfoliolink/food.html" class="accordion ml-2">Food & Products</a>
                     <a href="/portfoliolink/moment.html" class="accordion ml-2">Moments</a>
-                    <a href="/portfoliolink/gallery.html" class="accordion ml-2">Gallery</a>
-                    <a href="/portfoliolink/about.html" class="accordion ml-2 active-link">About</a>
+
+                    <a href="/portfoliolink/gallery.html" class="accordion active-link ml-2">Gallery</a>
+                    <a href="/portfoliolink/about.html" class="accordion ml-2">About</a>
 
                     <a href="/portfoliolink/contact.html" class="accordion ml-2">Contact</a>
                 </div>
@@ -127,11 +133,120 @@
                 </div>
             </div>
 
-            <div class="offset-md-4 offset-lg-3 col-lg-9 col-md-8 d-flex justify-content-center align-items-center" id="column-gallery">
-                <div class="about-container">
-                    <img src="/portfoliolink/assets/img/about/about.jpg" alt="">
-                    <span class="welcome-text">Hello! </span> <br>
-                    <h2 class="about-desc"><br> I'm Gladys Lydia Evan, you can call me Gladys. I am an undergraduate law student, I enjoy photography as a hobby since 2018.</h2>
+            <div class="offset-md-4 offset-lg-3 col-lg-9 col-md-8" id="column-gallery">
+                <div class="grid-container">
+                    <div class="grid">
+                        <!-- <div class="grid-img-container">
+                            <img src="/portfoliolink/assets/img/landing/3@2x.png" alt="">
+                            <div class="grid-tag">
+                            </div>
+                        </div>
+
+                        <div class="grid-img-container">
+                            <div class="grid-tag">
+                            </div>
+                            <img src="/portfoliolink/assets/img/landing/1@2x.png" alt="">
+                        </div>
+
+                        <div class="grid-img-container">
+                            <div class="grid-tag">
+                            </div>
+                            <img src="/portfoliolink/assets/img/landing/2@2x.png" alt="">
+                        </div>
+
+                        <div class="grid-img-container">
+                            <img src="/portfoliolink/assets/img/landing/4@2x.png" alt="">
+                            <div class="grid-tag">
+                            </div>
+                        </div>
+
+                        <div class="grid-img-container">
+                            <img src="/portfoliolink/assets/img/landing/5@2x.png" alt="">
+                            <div class="grid-tag">
+                            </div>
+                        </div>
+
+                        <div class="grid-img-container">
+                            <img src="/portfoliolink/assets/img/landing/6@2x.png" alt="">
+                            <div class="grid-tag">
+                            </div>
+                        </div>
+
+                        <div class="grid-img-container">
+                            <img src="/portfoliolink/assets/img/landing/7@2x.png" alt="">
+                            <div class="grid-tag">
+                            </div>
+                        </div>
+
+                        <div class="grid-img-container">
+                            <img src="/portfoliolink/assets/img/landing/8@2x.png" alt="">
+                            <div class="grid-tag">
+                            </div>
+                        </div>
+
+                        <div class="grid-img-container">
+                            <img src="/portfoliolink/assets/img/landing/9@2x.png" alt="">
+                            <div class="grid-tag">
+                            </div>
+                        </div>
+
+                        <div class="grid-img-container">
+                            <img src="/portfoliolink/assets/img/landing/10@2x.png" alt="">
+                            <div class="grid-tag">
+                            </div>
+                        </div>
+
+                        <div class="grid-img-container">
+                            <img src="/portfoliolink/assets/img/landing/11@2x.png" alt="">
+                            <div class="grid-tag">
+                            </div>
+                        </div>
+
+                        <div class="grid-img-container">
+                            <img src="/portfoliolink/assets/img/landing/12@2x.png" alt="">
+                            <div class="grid-tag">
+                            </div>
+                        </div>
+
+                        <div class="grid-img-container">
+                            <img src="/portfoliolink/assets/img/landing/13@2x.png" alt="">
+                            <div class="grid-tag">
+                            </div>
+                        </div>
+
+                        <div class="grid-img-container">
+                            <img src="/portfoliolink/assets/img/landing/14@2x.png" alt="">
+                            <div class="grid-tag">
+                            </div>
+                        </div>
+
+                        <div class="grid-img-container">
+                            <img src="/portfoliolink/assets/img/landing/15@2x.png" alt="">
+                            <div class="grid-tag">
+                            </div>
+                        </div>
+
+                        <div class="grid-img-container">
+                            <img src="/portfoliolink/assets/img/landing/16@2x.png" alt="">
+                            <div class="grid-tag">
+                            </div>
+                        </div>
+
+                        <div class="grid-img-container">
+                            <img src="/portfoliolink/assets/img/landing/17@2x.png" alt="">
+                            <div class="grid-tag">
+                            </div>
+                        </div>
+
+                        <div class="grid-img-container">
+                            <img src="/portfoliolink/assets/img/landing/18@2x.png" alt="">
+                            <div class="grid-tag">
+                            </div>
+                        </div> -->
+
+
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -143,12 +258,17 @@
     </footer>
 
 
-
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.js" integrity="sha512-un2apco0rYUiZXxbURvZ7oBq4u0cGrXaIbC4C1k5nAio6WRMyYvj8xKua3NqALOuu0F83zDha7nKoFCZzx26rg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/portfoliolink/assets/js/api.js"></script>
     <script src="/portfoliolink/assets/js/toast.js"></script>
     <script src="/portfoliolink/assets/js/global.js"></script>
+    <script>
+        $(document).ready(function() {
+            loadData(2);
+        })
+    </script>
 </body>
 
 </html>

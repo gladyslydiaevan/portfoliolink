@@ -67,6 +67,10 @@ body {
     justify-content: space-between;
 }
 
+#column-sidebar .logo-image {
+    margin-bottom: 20px;
+}
+
 #column-gallery {
     min-height: 100vh;
     background-color: #e4e3e3;
@@ -166,7 +170,8 @@ a.accordion:hover {
 }
 
 .about-container img {
-    width: 60%;
+    /* width: 60%; */
+    height: 50vh;
     border-radius: 20px;
 }
 
