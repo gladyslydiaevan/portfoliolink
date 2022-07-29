@@ -66,6 +66,10 @@ body::-webkit-scrollbar {
     /* Safari and Chrome */
 }
 
+#linktree {
+    background-color: #444647;
+}
+
 #linktree .row,
 #linktree .col-10 {
     height: 100vh;
@@ -91,19 +95,21 @@ body::-webkit-scrollbar {
     filter: grayscale(0%);
 }
 
-#linktree .linktree-title mark {
+#linktree .linktree-title {
+    margin-top: 20px;
     margin-bottom: 40px;
     font-size: 20px;
     font-weight: 500;
     display: inline-block;
     line-height: 0em;
     padding-bottom: 0.5em;
-    background-color: white;
+    /* background-color: white; */
+    color: white;
 }
 
 #linktree .linktree-item {
     margin-top: -20px;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, .8);
     color: #000;
     display: block;
     width: 100%;
