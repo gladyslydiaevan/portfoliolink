@@ -18,7 +18,7 @@ function toggleModal() {
 }
 
 function zoom(e) {
-    let src = e.querySelector('img').src
+  let src = e.querySelector('img').src
   $(".image-modal-container img").attr("src", src);
   $("#image-modal").toggleClass("active");
 }
@@ -48,14 +48,14 @@ function autoType(elementClass, typingSpeed) {
         }, i * typingSpeed);
       })(i + 1, text[i]);
     }
-  }, 1500);
+  }, 500);
 }
 
 $(document).ready(function () {
   // Now to start autoTyping just call the autoType function with the
   // class of outer div
   // The second paramter is the speed between each letter is typed.
-  autoType(".about-container", 100);
+  autoType(".about-container", 30);
 });
 
 $("form").submit(function (e) {

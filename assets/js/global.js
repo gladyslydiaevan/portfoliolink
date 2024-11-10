@@ -55,7 +55,7 @@ $(document).ready(function () {
   // Now to start autoTyping just call the autoType function with the
   // class of outer div
   // The second paramter is the speed between each letter is typed.
-  autoType(".about-container", 10);
+  autoType(".about-container", 30);
 });
 
 $("form").submit(function (e) {
