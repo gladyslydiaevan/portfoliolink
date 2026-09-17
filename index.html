@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Chrome, IE -->
     <meta name="theme-color" content="#DDD">
@@ -29,7 +32,8 @@
     <section id="linktree">
         <div class="row d-flex justify-content-center align-items-start">
             <div class="col-10 col-md-6 col-lg-4 d-flex flex-column justify-content-start align-items-center">
-                <div style="width: 100px; height: 100px; background-image: url('/portfoliolink/assets/img/linktree/profile.jpg'); background-size: cover; background-position: 0 -30px; margin-top: 50px;" class="rounded-circle"></div>
+                <div style="width: 100px; height: 100px; background-image: url('/portfoliolink/assets/img/linktree/profile.jpeg'); background-size: cover; background-position: 0 -30px; margin-top: 50px;"
+                    class="rounded-circle"></div>
                 <!-- <img src="/portfoliolink/assets/img/linktree/profile.jpg" alt="" class="profile-image rounded"> -->
 
                 <h4 class="linktree-title">
@@ -41,7 +45,11 @@
                 </a>
 
                 <div class="linktree-arrow non-active">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.7em" height="1.7em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20V4m-7 9l7 7l7-7"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.7em" height="1.7em"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 20V4m-7 9l7 7l7-7" />
+                    </svg>
                 </div>
             </div>
 
@@ -49,18 +57,24 @@
     </section>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.js" integrity="sha512-un2apco0rYUiZXxbURvZ7oBq4u0cGrXaIbC4C1k5nAio6WRMyYvj8xKua3NqALOuu0F83zDha7nKoFCZzx26rg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.js"
+        integrity="sha512-un2apco0rYUiZXxbURvZ7oBq4u0cGrXaIbC4C1k5nAio6WRMyYvj8xKua3NqALOuu0F83zDha7nKoFCZzx26rg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/portfoliolink/assets/js/api.js"></script>
     <script src="/portfoliolink/assets/js/toast.js"></script>
     <script src="/portfoliolink/assets/js/global.js"></script>
     <script>
-        $(document).ready(function() {
-            $('.linktree-item').mouseenter(function() {
+        $(document).ready(function () {
+            $('.linktree-item').mouseenter(function () {
                 $('.linktree-arrow').removeClass('non-active')
             })
-            $('.linktree-item').mouseleave(function() {
+            $('.linktree-item').mouseleave(function () {
                 $('.linktree-arrow').addClass('non-active')
             })
         })
