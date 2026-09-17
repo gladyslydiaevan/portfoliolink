@@ -28,6 +28,13 @@ $(".grid-img-container").click(function () {
   $("#image-modal").toggleClass("active");
 });
 
+// Discourage saving portfolio images through the browser context menu.
+document.addEventListener("contextmenu", function (event) {
+  if (event.target.closest("img")) {
+    event.preventDefault();
+  }
+});
+
 function autoType(elementClass, typingSpeed) {
   var thhis = $(elementClass);
   thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
